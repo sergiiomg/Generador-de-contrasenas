@@ -1,7 +1,9 @@
 //Guardamos en esta variable el botón para generar la contraseña obteniendo su id
 let generar = document.getElementById('generar');
+//Guardamos en esta variable el botón para copiar la contraseña obteniendo su id
+let copiar = document.getElementById('copiar');
 
-//Le añadimos un eventListener para generar la contraseña al hacer click
+//Creamos un eventListener para generar la contraseña al hacer click
 generar.addEventListener('click', function(){
     //Guardamos en una variable todas las letras mayúsculas
     let mayusculas = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
@@ -33,7 +35,7 @@ generar.addEventListener('click', function(){
     }
 
     //En esta variable se almacenará la contraseña generada
-    let password = '';
+    let contraseña = '';
     let longitud = 12;
 
 
@@ -43,9 +45,17 @@ generar.addEventListener('click', function(){
          * y será el caracter que utilicemos.
          */
         let randomIndex = Math.floor(Math.random() * caracteresPermitidos.length);
-        password += caracteresPermitidos[randomIndex];
+        contraseña += caracteresPermitidos[randomIndex];
     }
 
-    document.getElementById("contraseña").value = password;
+    document.getElementById("contraseña").value = contraseña;
 
+});
+
+//Creamos un addEventListener para que el usuario pueda copiar la contraseña generada
+copiar.addEventListener('click', function(){
+    //Seleccionamos la contraseña generada
+    navigator.clipboard.writeText(contraseña.value);
+    //Mostramos mensaje de éxito
+    alert('¡Contraseña copiada en el portapapeles!')
 });

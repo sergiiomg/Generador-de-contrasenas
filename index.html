@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Generador de Contraseñas</title>
 </head>
 <body>
     <div id="container">
         <input type="text" id="contraseña" readonly>
+        
+        <div>
+            <label>
+                <input type="checkbox" id="mayusculas"> Incluir mayúsculas
+            </label>
+            <label>
+                <input type="checkbox" id="minusculas"> Incluir minúsculas
+            </label>
+            <label>
+                <input type="checkbox" id="numeros"> Incluir números
+            </label>
+            <label>
+                <input type="checkbox" id="simbolos"> Incluir símbolos
+            </label>
+        </div>
+        
         <button id="generar">Generar contraseña</button>
-
-        <label>
-            <input type="checkbox" id="mayusculas"> Incluir mayúsculas
-        </label>
-        <label>
-            <input type="checkbox" id="minusculas"> Incluir minúsculas
-        </label>
-        <label>
-            <input type="checkbox" id="numeros"> Incluir números
-        </label>
-        <label>
-            <input type="checkbox" id="simbolos"> Incluir símbolos
-        </label>            
     </div>
     <script src="js/script.js"></script>
 </body>

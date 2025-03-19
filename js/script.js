@@ -32,6 +32,7 @@ generar.addEventListener('click', function(){
     //Si el usuario no selecciona ningún tipo de caracter, se mostrará una alerta con el siguiente mensaje:
     if(caracteresPermitidos === ''){
         alert('Selecciona al menos un tipo de caracter');
+        return;
     }
 
     //En esta variable se almacenará la contraseña generada

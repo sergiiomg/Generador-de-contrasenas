@@ -6,7 +6,6 @@ Este es un generador de contraseñas aleatorias en el qie podrás personalizar l
 ## Funcionalidades
 - Generación de contraseñas aleatorias.
 - Opciones para incluir mayúsculas, minúsculas, números y símbolos.
-- Selector de longitud de contraseña con un **slider**.
 - Copiar contraseña en el portapapeles
 - Interfaz sencilla y fácil de usar.
 

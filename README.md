@@ -1,7 +1,7 @@
 # Generador de Contraseñas Aleatorias
 
 ## Descripción
-Este es un generador de contraseñas aleatorias en el qie podrás personalizar la contraseña con diferentes opciones, como incluir mayúsculas, minúsculas, números y símbolos.
+Este es un generador de contraseñas aleatorias en el que podrás personalizar la contraseña con diferentes opciones, como incluir mayúsculas, minúsculas, números y símbolos.
 
 ## Funcionalidades
 - Generación de contraseñas aleatorias.
